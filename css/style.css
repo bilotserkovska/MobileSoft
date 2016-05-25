@@ -13,10 +13,14 @@ body{
 	height: 100%;
 }
 .wrapper{
-	position: relative;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
 	height: 328px;
 	width: 439px;
-	margin: 50px auto;
 	background: url(../images/bg.jpg);
 }
 .table-wrap{
@@ -210,4 +214,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7dc13a', end
 	font-weight: bold;
 	font-size: 12px;
 }
-
+@media (max-width: 767px){
+    .wrapper{
+        width: 320px;
+    }
+    .table-wrap{
+        left: 0;
+    }
+    .winner-box{
+        left: 45px;
+    }
+}
